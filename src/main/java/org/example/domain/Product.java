@@ -1,46 +1,47 @@
 package org.example.domain;
 
-public class User {
-    private int userId;
-    private  String name;
-    private  String pw;
+public class Product {
+    private int productId;
+    private  String productName;
+    private  String productColor;
 
-    public User(int userId, String name, String pw) {
-        this.userId = userId;
-        this.name = name;
-        this.pw = pw;
+    public Product(int productId, String productName, String productColor) {
+        this.productId = productId;
+        this.productName = productName;
+        this.productColor = productColor;
     }
 
-    public int getUserId() {
-        return userId;
+    public int getProductId() {
+        return productId;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public void setProductId(int productId) {
+        this.productId = productId;
     }
 
-    public String getName() {
-        return name;
+    public String getProductName() {
+        return productName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setProductName(String productName) {
+        this.productName = productName;
     }
 
-    public String getPw() {
-        return pw;
+    public String getProductColor() {
+        return productColor;
     }
 
-    public void setPw(String pw) {
-        this.pw = pw;
+    public void setProductColor(String productColor) {
+        this.productColor = productColor;
     }
 
     @Override
     public String toString() {
-        return "User{" +
-                "userId=" + userId +
-                ", name='" + name + '\'' +
-                ", pw='" + pw + '\'' +
+
+        return "Product{" +
+                "ProductId=" + productId +
+                ", ProductName='" + productName + '\'' +
+                ", productColor='" + productColor + '\'' +
                 '}';
     }
 }
